@@ -6,6 +6,88 @@
     <title>Weather Surfer</title>
 </head>
 <body>
+    <img src="./asset/—Pngtree—blue sky and white clouds_7274577.png" alt="background image" class="bg-img">
+    <header>
+        <img src="./asset/Weather_Surfer-removebg-preview.png" alt="Weather Surfer" class="logo">
+        <form action="">
+            <label for="city">City</label>
+            <input type="text" name="city" id="city">
+            <input type="submit" value="Search">
+        </form>
+        <button class="temp">
+            <span class="f active">&deg;F</span>
+            /
+            <span class="c">&deg;C</span>
+        </button>
+    </header>
     
+    <div id="weather-details">
+        <div id="today">
+            <p class="cond"></p> <span>in</span> <p class="address"></p>
+            <p class="full-address"></p>
+            <div class="section">
+                <div class="temp-value">
+                    <div class="value"></div>
+                    <span class="unit">&deg;F</span>
+                </div>
+                <div class="divider"></div>
+                <div class="inner-section">
+                    <div class="feel">
+                        Feels like 
+                        <span class="value"></span>
+                        <span class="unit">&deg;F</span>
+                    </div>
+                    <div class="wind">
+                        Wind 
+                        <span class="value"></span>
+                        <span class="unit">MPH</span>
+                    </div>
+                    <div class="humidity">
+                        Humidity 
+                        <span class="value"></span>
+                        %
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tomorrow">
+            <p class="cond"></p> <span>tomorrow</span>
+            <div class="section">
+                <div class="temp-value">
+                    <div class="value"></div>
+                    <span class="unit">&deg;F</span>
+                </div>
+                <div class="divider"></div>
+                <div class="inner-section">
+                    <div class="feel">
+                        Feels like 
+                        <span class="value"></span>
+                        <span class="unit">&deg;F</span>
+                    </div>
+                    <div class="wind">
+                        Wind 
+                        <span class="value"></span>
+                        <span class="unit">MPH</span>
+                    </div>
+                    <div class="humidity">
+                        Humidity 
+                        <span class="value"></span>
+                        %
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="not-found remove">
+        <div>
+            <p>Location Not Found</p>
+            <button class="close">Close</button>
+        </div>
+    </div>
+
+    <div class="loading remove">
+        <img src="./asset/output-onlinegiftools.gif" alt="">
+    </div>
 </body>
 </html>
